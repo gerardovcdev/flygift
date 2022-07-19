@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para la chica mas preciosa del mundo.</title>
+</head>
+<body>
+    <h1 class="titulo">Para la chica mas preciosa del mundo.❤️</h1>
+    <h4 class="texto1"> Por favor presiona play antes de comenzar.</h4>
+    <audio controls class="audio">
+        <source src="musica/song.mp3" type="audio/mp3">
+        
+            Tu navegador no soporta audio HTML5.
+    </audio>
+
+
+    <img src="img/Fly.jpg" class="fly">
+    
+    <h4 class="texto1">Se que no soy guapo, ni divertido, ni tengo mucho dinero, tampoco soy muy social y muchas veces puedo ser una persona muy aburrida, pero desde que llegaste a mi vida, todos los días se volvieron un arcoiris de colores y una felicidad inexplicable, por eso quiero comenzar este pequeño regalo con una pregunta.</h4>
+    <h3 class="texto2">¿Me dejarias caminar a tu lado?</h3>
+    <button id="si" class="boton">Si</button>
+    <button id="no" class="boton">Nope</button>
+    
+
+
+
+    <style>
+
+        
+        body {
+            
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            background-image: url('img/fondo3.jpg');
+            background-size: cover;
+            
+            
+        
+            
+           
+            
+        }
+
+        .titulo {
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+            
+            
+           
+            
+           
+        }
+
+        .fly {
+            width: 250px;
+            height: 250px;
+            border-radius: 20%;
+            border-color: antiquewhite;
+            border-style: dashed;
+            border-width: 10px;
+            margin-top: 50px;
+            
+           
+            
+        }
+
+        .texto1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin-left: 5%;
+            margin-right: 5%;
+            
+         
+            text-align: center;
+            text-justify: distribute-all-lines;
+            font-weight: lighter;
+            font-style: italic;
+            
+        }
+        .texto2 {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-size: 25px;
+           
+            text-align: center;
+            text-justify: distribute-all-lines;
+            
+        }
+
+        .boton {
+          
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            width: 90px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color:antiquewhite;
+            font-weight: lighter;
+            
+            
+        }
+
+        .audio {
+            width: 300px;
+            position: absolute;
+            height: 30px;
+        }
+
+
+
+    </style>
+
+
+    <script>
+        const botonsi = document.getElementById('si');
+        const botonno = document.getElementById('no');
+
+        const clicksi = () => {
+            alert('Hola pequeña❤️');
+            alert('Se que dijiste que querias una carta.');
+            alert('Pero pues la verdad queria hacer algo un poquito mas especial.');
+            alert('Asi que decidi hacerte un regalo a mi estilo.');
+            alert('Espero te guste, te quiero mucho.');
+
+
+
+
+            window.open('https://i.imgur.com/lWLNJHQ.png');
+            
+            
+
+        };
+
+        const clickno = () => {
+            
+            botonno.style.position = 'absolute';
+            botonno.style.top = (Math.random() * window.innerHeight) + 'px';
+            botonno.style.left = (Math.random() * window.innerWidth) + 'px';
+        };
+
+        botonsi.addEventListener('click',clicksi);
+        botonno.addEventListener('mouseover', clickno);
+
+
+
+    </script>
+
+    
+</body>
+</html>
